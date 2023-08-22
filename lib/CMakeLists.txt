@@ -1,0 +1,1 @@
+add_library(MyDataBase MyCoolDB.h MyCoolDB.cpp ParserSQL.h  ParserSQL.cpp working_with_string.cpp)

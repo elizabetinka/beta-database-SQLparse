@@ -1,0 +1,22 @@
+CREATE     TABLE  Univerity (
+        subject varchar ( 20) PRIMARY KEY ,
+        teacher_name varchar ( 20),
+        time_in_year int );
+        INSERT INTO  Univerity VALUES ("Matan","Dalevskayy",59);
+        INSERT INTO  Univerity  VALUES ("Proga","Hvastunov",30);
+        INSERT INTO  Univerity  VALUES ("Algosy","Permyykov",30);
+        INSERT INTO  Univerity  VALUES ("Ballroom","Starceva",175);
+        INSERT INTO  Univerity  VALUES ("Diskret","Chycharef",60);
+CREATE     TABLE  Lizochka (
+        Predmet varchar ( 20) FOREIGN KEY REFERENCES  Univerity(subject) ,
+        1_semestr int NOT NULL,
+        2_semestr double );
+        INSERT INTO  Lizochka (Predmet,1_semestr,2_semestr) VALUES ("Matan",4,3.5);
+        INSERT INTO  Lizochka  VALUES ("Algosy",5,4.5);
+        INSERT INTO  Lizochka  VALUES ("Algosy",7,8.5);
+        INSERT INTO  Lizochka  (Predmet,1_semestr) VALUES ("Proga",100);
+        INSERT INTO  Lizochka  VALUES ("Proga",100,100.3);
+SELECT Univerity.subject, Univerity.teacher_name, Lizochka.1_semestr
+        FROM   Lizochka
+        RIGHT JOIN Univerity
+        ON Lizochka.Predmet = Univerity.subject;

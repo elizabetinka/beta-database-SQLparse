@@ -1,0 +1,16 @@
+Таблица : Lizochka
+|      Predmet       |     1_semestr      |     2_semestr      |
+|       Proga        |        100         |     100.300000     |
+|       Proga        |        100         |        NULL        |
+|       Algosy       |         7          |      8.500000      |
+|       Algosy       |         5          |      4.500000      |
+|       Matan        |         4          |      3.500000      |
+
+Таблица : Univerity
+|      subject       |    teacher_name    |    time_in_year    |
+|      Diskret       |     Chycharef      |         60         |
+|      Ballroom      |      Starceva      |        175         |
+|       Algosy       |     Permyykov      |         30         |
+|       Proga        |     Hvastunov      |         30         |
+|       Matan        |     Dalevskayy     |         59         |
+
